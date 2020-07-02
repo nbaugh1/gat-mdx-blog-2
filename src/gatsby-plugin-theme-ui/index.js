@@ -1,4 +1,4 @@
-import { merge } from "theme-ui"
+import { merge } from "@theme-ui/core/src"
 import { tailwind } from "@theme-ui/presets"
 // q
 const theme = merge(tailwind, {
