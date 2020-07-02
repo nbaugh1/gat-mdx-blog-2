@@ -4,7 +4,14 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `NPB Dev Blog`,
+    siteTitleAlt: `Dev Blog | Nick Baughman`,
+    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteUrl: `https://npb-dev-blog.com`,
+    siteDescription: `A software development blog written by Nick Baughman`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `@nbaugh1`,
   },
   plugins: [
     {
@@ -23,12 +30,20 @@ module.exports = {
         ],
         externalLinks: [
           {
+            name: `Portfolio`,
+            url: `https://nbaugh1.github.io`
+          },
+          {
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/nickbaughman/`
+          },
+          {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/nbaugh1`,
           },
           {
             name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://www.instagram.com/nbaugh1/`,
           },
         ],
       },
@@ -43,9 +58,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `NPB Dev Blog - @lekoarts/gatsby-theme-minimal-blog`,
+        short_name: `NPB Dev Blog`,
+        description: `A blog written by Nick Baughman focusing on software development`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
